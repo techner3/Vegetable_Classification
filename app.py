@@ -43,6 +43,7 @@ def predictRoute():
 
     try:
         image = request.json['image']
+        clApp = ClientApp()
         decodeImage(image, clApp.filename)
         result = clApp.classifier.prediction()
         return jsonify(result)
@@ -51,8 +52,5 @@ def predictRoute():
         return jsonify(e)
 
 
-#port = int(os.getenv("PORT"))
 if __name__ == "__main__":
-    clApp = ClientApp()
-    #app.run(host='0.0.0.0', port=port)
     app.run()
