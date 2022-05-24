@@ -44,3 +44,7 @@ Web after Prediction :
 Docker command to pull the image:
 
 ```docker pull techner3/vegclassifier```
+
+# Points to Note
+
+* The app was not deployed due to the large size of the requirements
